@@ -1,0 +1,12 @@
+@use "../../styles/mixins" as m;
+@use "../../styles/variables" as v;
+@use "../../styles/placeholders";
+
+.headerStyling {
+    @include m.flexBox(row-reverse, space-between, center, 1rem);
+    padding: 0rem 0.6rem;
+
+    h2 {
+        margin: 0;
+    }
+}
