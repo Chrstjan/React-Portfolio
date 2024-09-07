@@ -3,35 +3,27 @@
 @use "../../../styles/placeholders";
 
 .navbarStyling {
-    margin-top: 0.3rem;
-    @include m.flexBox(row, flex-start, center, 0.5rem);
-    padding: 0.6rem 0rem;
-    .navList {
-        @include m.flexBox(column, center, center, 0.8rem);
-        
+  margin-top: 0.3rem;
+  @include m.flexBox(row, flex-start, center, 0.5rem);
+  padding: 0.6rem 0rem;
 
-        li {
-            list-style: none;
-            background: #710532;
-            padding: 0.4rem 0rem;
-            width: 100px;
-            border-radius: 4px;
-            text-align: center;
-            filter: drop-shadow(4px 7px #00000099);
-        }
+  .navList {
+    @include m.flexBox(column, center, center, 0.8rem);
+
+    li {
+      list-style: none;
+      background: #710532;
+      padding: 0.4rem 0rem;
+      width: 100px;
+      border-radius: 4px;
+      text-align: center;
+      filter: drop-shadow(4px 7px #00000099);
+      border-top-left-radius: 19px;
+      border-bottom-left-radius: 3px;
+
+      a {
+        text-decoration: none;
+      }
     }
-
-    .hamburger {
-        display: block;
-
-        .bar {
-            display: block;
-            margin: 4px 4px;
-            width: 20px;
-            height: 6px;
-            border-radius: 8px;
-            background: #eee;
-        }
-    }
+  }
 }
-
